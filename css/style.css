@@ -1,0 +1,1058 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 5020px;
+    /* Preto/05% */
+    background: #F5F5F5;
+}
+
+header {
+/* Topo */
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+
+position: static;
+width: 1136px;
+height: 88px;
+left: 152px;
+top: 0px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 32px 0px;
+}
+
+.logo{
+    /* Logo */
+/* Auto layout */
+
+display: flex;
+width: 210px;
+height: 24px;
+left: 0px;
+top: 32px;
+margin: 0px 152px;
+}
+
+.logo img {
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    margin: 0px 8px;
+}
+
+.logo span{
+    position: static;
+    width: 162px;
+    height: 19px;
+    left: 32px;
+    top: 0px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #464646;
+    margin: 0px 8px;
+}
+
+nav{
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+nav li{
+    /* Links */
+/* Auto layout */
+
+display: inline;
+align-items: center;
+position: static;
+height: 24px;
+top: 34.5px;
+
+
+}
+
+li a{
+    position: static;
+top: 0px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+/* Preto/100% */
+
+color: #464646;
+text-decoration: none;
+margin: 0px 32px;
+}
+
+#email{
+    color: black;
+}
+
+.encabezado{
+display: inline-block;
+width: 1250px;
+height: 368px;
+left: 152px;
+top: 120px;
+margin: 32px 152px;
+}
+
+#presentacion{
+    position: static;
+    /*width: 751px;
+    height: 122px;*/
+    left: 0px;
+    top: 0px;
+    
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 61px;
+    
+    /* Preto/100% */
+    
+    color: #464646;
+    margin: 24px 0px;
+}
+
+#formacion{
+    position: static;
+width: 751px;
+height: 52px;
+left: 0px;
+top: 146px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 26px;
+
+/* Preto/100% */
+
+color: #464646;
+
+margin: 24px 0px;
+}
+
+.foto-perfil{
+    width: 368px;
+    height: 368px;
+    left: 768px;
+    float: right;
+    top: 0px;
+    border-radius: 50%;
+}
+
+.redes{
+    /* Links */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+position: static;
+width: 630px;
+height: 24px;
+left: 0px;
+top: 222px;
+
+
+margin: 24px 0px;
+}
+
+.contenedor-sobre-mi{
+    /* Frame 6 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 64px;
+
+position: static;
+width: 1440px;
+height: 383px;
+left: 0px;
+top: 520px;
+
+/* Azul/10% */
+
+background: #EAF2FD;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+margin: 32px 0px;
+}
+
+.sobre-mi{
+    /* Sobre */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 1136px;
+height: 255px;
+left: 152px;
+top: 64px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+}
+
+.sobre-mi h1{
+    /* Sobre mi */
+
+
+position: static;
+width: 137px;
+height: 38px;
+left: 0px;
+top: 0px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 16px 0px;
+}
+
+.sobre-mi p{
+    position: static;
+    width: 751px;
+    left: 0px;
+    top: 54px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Preto/100% */
+
+    color: #464646;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.sobre-mi img{
+    position: static;
+width: 140px;
+height: 52px;
+left: 0px;
+top: 203px;
+
+/*background: url(firma.png);
+
+ Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 16px 0px;
+}
+
+.skills-hobbies{
+    /* Skills e hobbies */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 1440px;
+height: 1245px;
+left: 0px;
+top: 935px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+margin: 32px 0px;
+}
+
+.skills{
+    /* Area de skills */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 1136px;
+height: 244px;
+left: 152px;
+top: 0px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 88px 0px;
+}
+
+.skills span{
+position: static;
+width: 82px;
+height: 38px;
+left: 527px;
+top: 0px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+
+text-align: center;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 32px 0px;
+}
+
+.contenedor-skills{
+    /* Skills */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 1136px;
+height: 174px;
+left: 0px;
+top: 70px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 32px 0px;
+}
+
+.skills-html{
+    /* Skill */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 176px;
+height: 174px;
+left: 0px;
+top: 0px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 16px;
+}
+
+.skills-html img{
+    position: static;
+width: 24px;
+height: 37px;
+left: 16px;
+top: 94px;
+
+font-family: Font Awesome 5 Brands;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2A7AE4;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-html span{
+    position: static;
+width: 144px;
+height: 19px;
+left: 16px;
+top: 139px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+
+.skills-js{
+    /* Skill */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 176px;
+height: 174px;
+left: 192px;
+top: 0px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 16px;
+}
+
+.skills-js img{
+    position: static;
+width: 28px;
+height: 37px;
+left: 16px;
+top: 94px;
+
+font-family: Font Awesome 5 Brands;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2A7AE4;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-js span{
+    position: static;
+width: 144px;
+height: 19px;
+left: 16px;
+top: 139px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-java{
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 176px;
+height: 174px;
+left: 384px;
+top: 0px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 0px 16px;
+}
+
+.skills-java img{
+    position: static;
+width: 48px;
+height: 48px;
+left: 16px;
+top: 94px;
+
+font-family: Font Awesome 5 Brands;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2A7AE4;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-java span{
+    position: static;
+width: 144px;
+height: 19px;
+left: 16px;
+top: 139px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-css{
+    
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 176px;
+height: 174px;
+left: 576px;
+top: 0px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
+margin: 0px 16px;
+}
+
+.skills-css img{
+    position: static;
+width: 40px;
+height: 37px;
+left: 16px;
+top: 94px;
+
+font-family: Font Awesome 5 Brands;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2A7AE4;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-css span{
+    position: static;
+width: 144px;
+height: 19px;
+left: 16px;
+top: 139px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-net{
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 176px;
+height: 174px;
+left: 768px;
+top: 0px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 4;
+flex-grow: 0;
+margin: 0px 16px;
+}
+
+.skills-net img{
+    
+position: static;
+width: 32px;
+height: 37px;
+left: 16px;
+top: 94px;
+
+font-family: Font Awesome 5 Brands;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #2A7AE4;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-net span{
+    
+position: static;
+width: 144px;
+height: 19px;
+left: 16px;
+top: 139px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.skills-sql{
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 176px;
+height: 174px;
+left: 960px;
+top: 0px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 5;
+flex-grow: 0;
+margin: 0px 16px;
+}
+
+.skills-sql img{
+    
+    position: static;
+    width: 32px;
+    height: 37px;
+    left: 16px;
+    top: 94px;
+    
+    font-family: Font Awesome 5 Brands;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #2A7AE4;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    }
+
+    .skills-sql span{
+        position: static;
+width: 144px;
+height: 19px;
+left: 16px;
+top: 139px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+    }
+
+.hobbies{
+    /* Area de skills */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 1136px;
+height: 244px;
+left: 152px;
+top: 332px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 88px 0px;
+}
+
+.hobbies span{
+    position: static;
+width: 127px;
+height: 38px;
+left: 504.5px;
+top: 0px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+
+text-align: center;
+
+/* Preto/100% */
+
+color: #464646;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 32px 0px;
+}
+
+.contenedor-hobbies{
+    /* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 1136px;
+height: 174px;
+left: 0px;
+top: 70px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 32px 0px;
+}
+
+.hobbie-ajedrez{
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 176px;
+height: 174px;
+left: 0px;
+top: 0px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 16px;
+}
