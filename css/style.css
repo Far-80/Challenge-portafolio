@@ -20,9 +20,6 @@ top: 0px;
 }
 
 header {
-/* Topo */
-/* Auto layout */
-
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -150,6 +147,7 @@ color: #464646;
 }
 #email{
     color: black;
+    font-weight:bold;
 }
 
 .encabezado{
@@ -680,13 +678,8 @@ margin: 16px 0px;
 }
 
 .skills-hobbies{
-    /* Skills e hobbies */
-
-
-/* Auto layout */
-
-display: flex;
-flex-direction: column;
+display: inline;
+/*flex-direction: column;*/
 align-items: center;
 padding: 0px;
 
@@ -707,12 +700,7 @@ margin: 32px 0px;
 }
 
 .skills{
-    /* Area de skills */
-
-
-/* Auto layout */
-
-display: flex;
+display: block;
 flex-direction: column;
 align-items: center;
 padding: 0px;
@@ -729,11 +717,11 @@ top: 0px;
 flex: none;
 order: 0;
 flex-grow: 0;
-margin: 88px 0px;
+margin: 88px auto;
 }
 
 .skills h2{
-position: static;
+position: relative;
 width: 82px;
 height: 38px;
 left: 527px;
@@ -1318,12 +1306,7 @@ margin: 8px 0px;
     }
 
 .hobbies{
-    /* Area de skills */
-
-
-/* Auto layout */
-
-display: flex;
+display: block;
 flex-direction: column;
 align-items: center;
 padding: 0px;
@@ -1340,11 +1323,11 @@ top: 332px;
 flex: none;
 order: 1;
 flex-grow: 0;
-margin: 88px 0px;
+margin: 88px auto;
 }
 
 .hobbies h2{
-    position: static;
+    position: relative;
 width: 127px;
 height: 38px;
 left: 504.5px;
@@ -2326,7 +2309,7 @@ margin: 8px 0px;
     flex: none;
     order: 4;
     flex-grow: 0;
-    margin: 32px 0px;
+    margin: 32px auto;
 }
 
 .experiencia-profesional h2{
@@ -2820,7 +2803,7 @@ margin: 0px 0px;
 
 .pie-pagina span{
     position: static;
-width: 229px;
+width: 270px;
 height: 38px;
 left: 605.5px;
 top: 32px;
