@@ -6,7 +6,15 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,50}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+	asunto: /^[a-zA-ZÀ-ÿ\s]{1,50}$/, // Letras y espacios, pueden llevar acentos.
+	mensaje: /^[a-zA-ZÀ-ÿ\s]{1,300}$/ // Letras y espacios, pueden llevar acentos.
+}
+
+const campos = {
+	nombre: false,
+	correo: false,
+	asunto: false
 }
 
 const validarFormulario = (e) => {
@@ -14,8 +22,8 @@ const validarFormulario = (e) => {
         case "nombre":
             validarCampo(expresiones.nombre,e.target,'nombre');
         break;
-        case "email":
-            validarCampo(expresiones.correo, e.target,'email');
+        case "correo":
+            validarCampo(expresiones.correo, e.target,'correo');
             break;
         case "asunto":
             validarCampo(expresiones.nombre,e.target,'asunto');
@@ -31,12 +39,14 @@ const validarCampo = (expresion, input, campo) =>{
         document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
         document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+        campos[campo] = true;
     }else{
         document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
         document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
         document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
         document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+        campos[campo] = false;
     }
 }
 
@@ -48,31 +58,22 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit',(e) =>{
     e.preventDefault();
+
+    if (campos.nombre && campos.correo && campos.asunto){
+        formulario.reset();
+        document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
+        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+
+        setTimeout(() => {
+            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo')
+        }, 5000);
+
+        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+            icono.classList.remove('formulario__grupo-correcto')
+        })
+    }else{
+        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+    }
 });
 
-/*
-function validarEmail(email){
-    var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-    /*
-        re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-    
-    return expReg.test(email);
-};
-
-
-function validarDatos (){
-    
-    window.event.preventDefault();
-    var msgNombre = document.querySelector("#msg-error-nombre");
-    const nombre = document.querySelector("#nombre").value;
-    msgNombre.textContent ="";
-
-    if ( nombre =="" || nombre.length > 50){
-        msgNombre.textContent = "Campo obligatorio, máximo 50 caracteres!"
-    }
-
-}
-
-document.getElementById('btn-enviar').addEventListener("click",validarDatos);
-
-*/
+/* video tutorial de FalconMasters https://youtu.be/s3pC93LgP18*/
