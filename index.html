@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portafolio - Fabian Rodriguez</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
@@ -207,22 +208,52 @@
                     <div class="contacto">
                         <div class="contacto-info">
                             <span>Contacto</span>
-                            <p>¿Quieres contactarme?
-                            Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                            <h3>¿Quieres contactarme?</h3>
+                            <h3>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</h3>
                     
                         </div>
 
-                        <section class="formulario">
-                            <input type="text" id="nombre" placeholder="Nombre">
-                            <input type="email" id="email-contacto" placeholder="Correo">
-                            <input type="text" id="asunto" placeholder="Asunto">
+                        <form class="formulario" id="formulario">
+                            <!--Grupo nombre-->
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario-input" name="nombre" id="nombre" placeholder="Nombre">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Campo obligatorio, máximo 50 Letras!</p>
+                            </div>
+
+                            <!--Grupo email-->
+                            <div class="formulario__grupo" id="grupo__email">
+                                <div class="formulario__grupo-input">
+                                    <input type="email" class="formulario-input" name="email" id="email" placeholder="correo@correo.com">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Campo obligatorio, formato email inválido!</p>
+                            </div>
+
+                            <!--Grupo asunto-->
+                            <div class="formulario__grupo" id="grupo__asunto">
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario-input" name="asunto" id="asunto" placeholder="Asunto">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Campo obligatorio, máximo 50 Letras!</p>
+                            </div>
+                            
                             <textarea cols="70" rows="10" id="mensaje" placeholder="Mensaje" required></textarea>
-                        </section>
-                        
-                        <button id="btn-enviar"><span>Enviar mensaje</span></button>
-                        
+                            
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p><i class=" fas fa-exclamation-triangle"></i><b>Error:</b>Por favor rellena el formulario correctamente.</p>
+
+                            </div>
+
+                            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                <button type="submit" class="formulario__btn">Enviar Mensaje</button>
+                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                            </div>
+                        </form>
                     </div>
-                    
                 </div>
             </div>
 
@@ -230,6 +261,10 @@
                 <span>Desarrollado por Fabian Rodriguez 2022</span>
             </div>
         </footer>
+        <script src="validacion.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+        
     </body>
 
 </html>

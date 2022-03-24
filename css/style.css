@@ -17,6 +17,7 @@ height: 5020px;
 left: 0%;
 right: 0%;
 top: 0px;
+border-radius: none;
 }
 
 header {
@@ -2890,10 +2891,10 @@ flex-grow: 0;
 margin: 8px 0px;
 }
 
-.contacto p{
+.contacto-info h3{
 position: static;
 width: 656px;
-height: 38px;
+height: 12px;
 left: 0px;
 top: 46px;
 
@@ -2901,15 +2902,10 @@ font-family: Raleway;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 19px;
-
-/* Preto/100% */
 
 color: #464646;
 
 flex: none;
-order: 1;
-flex-grow: 0;
 margin: 8px 0px;
 }
 
@@ -2919,26 +2915,100 @@ height: 397px;
 margin: 32px 0px;
 }
 
+.formulario__grupo-input{
+    position: relative;
+    width: 100%;
+}
+
+.formulario-input{
+	background: #FFFFFF;
+    border:3px solid transparent;
+    height: 56px;
+    line-height: 56px;
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 3px;
+    transition: .3s ease all;
+}
+
+.formulario-input:focus{
+    border: 3px solid #2A7AE4;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163,0.4s);
+}
+
+.formulario-input::placeholder{
+    color: #2A7AE4;
+}
+
+.formulario__input-error{
+    font-size: 14px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+    z-index: 100;
+    font-size: 26px;
+    opacity: 0;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color:#1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+    color:  #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario-input{
+    border: 3px solid #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color:  #bb2929;
+    opacity: 1;
+}
+
+.formulario__mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #f66060 ;
+    padding: 0px 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo{
+    display: block;
+}
+
+.formulario__mensaje p{
+    margin: 0;
+}
+/*
+.msg-error{
+    font-weight: bold;
+    font-size: 16px; 
+    font-family: Raleway;
+    font-style: normal;
+    color: red;
+}
+
 #nombre{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 
-position: static;
-width: 656px;
-height: 56px;
-left: 0px;
-top: 0px;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-margin: 32px 0px;
 }
 
 #email-contacto{
@@ -2947,19 +3017,6 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 
-position: static;
-width: 656px;
-height: 56px;
-left: 0px;
-top: 88px;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
 margin: 32px 0px;
 }
 
@@ -2969,22 +3026,9 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 
-position: static;
-width: 656px;
-height: 56px;
-left: 0px;
-top: 176px;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
 margin: 32px 0px;
 }
-
+*/
 #mensaje{
     display: flex;
 flex-direction: column;
@@ -3004,60 +3048,41 @@ flex: none;
 order: 3;
 align-self: stretch;
 flex-grow: 0;
-margin: 32px 0px;
+margin: 20px 0px;
 }
 
-#btn-enviar{
+.formulario__btn{
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-position: static;
-width: 144px;
-height: 51px;
-left: 0px;
-top: 545px;
+    color:#FFFFFF;
 
-/* Azul/100% */
+    width: 30%;
+    height: 51px;
+    line-height: 51px;
 
-background: #2A7AE4;
-
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-flex-grow: 0;
-margin: 32px 0px;
+    background: #2A7AE4;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
 }
 
-#btn-enviar span{
-    position: static;
-width: 112px;
-height: 19px;
-left: 16px;
-top: 16px;
+.formulario__btn:hover{
+    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
+.formulario__mensaje-exito{
+    font-size: 14px;
+    color: #119200;
+    display:none;
+}
 
-
-/* Preto/branco */
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 10px;
+.formulario__mensaje-exito-activo{
+    display:block;
 }
 
 .pie-pagina{
