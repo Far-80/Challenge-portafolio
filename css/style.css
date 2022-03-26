@@ -2992,21 +2992,10 @@ margin: 32px 0px;
 }
 
 .formulario__mensaje p{
-    margin: 0;
+    margin-top: 10px;
 }
 
 .formulario-textarea{
-    /*display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-
-position: static;
-height: 133px;
-left: 0px;
-top: 264px;
-*/
-
     background: #FFFFFF;
     border:3px solid transparent;
     margin: 16px 0px;
@@ -3019,6 +3008,10 @@ top: 264px;
     border: 3px solid #2A7AE4;
     outline: none;
     box-shadow: 3px 0px 30px rgba(163,163,163,0.4s);
+}
+
+.formulario__grupo-incorrecto .formulario-textarea{
+    border: 3px solid #bb2929;
 }
 
 .formulario__btn{
